@@ -1,0 +1,18 @@
+export const PROPERTY_TYPES = [
+  { value: "casa", label: "Casa" },
+  { value: "apartamento", label: "Apartamento" },
+  { value: "casa-condominio", label: "Casa em Condomínio" },
+  { value: "galpao", label: "Galpão" },
+  { value: "kitnet", label: "Kitnet" },
+  { value: "loft", label: "Loft" },
+  { value: "studio", label: "Studio" },
+  { value: "cobertura", label: "Cobertura" },
+  { value: "flat", label: "Flat" },
+  { value: "sobrado", label: "Sobrado" },
+  { value: "terreno", label: "Terreno" },
+  { value: "comercial", label: "Comercial" },
+  { value: "residencial-comercial", label: "Residencial/Comercial" },
+  { value: "fazenda", label: "Fazenda" },
+  { value: "sitio", label: "Sítio" },
+  { value: "chacara", label: "Chácara" },
+];

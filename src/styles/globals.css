@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Garantir que o texto dos inputs seja preto */
+input, textarea, select {
+  color: #000000 !important;
+}
+
+/* Placeholder com cor mais escura */
+input::placeholder, textarea::placeholder {
+  color: #6b7280 !important;
+}
+
+/* Foco nos inputs */
+input:focus, textarea:focus, select:focus {
+  color: #000000 !important;
+}
+
+/* Esconder barra de rolagem para scroll horizontal */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Esconder elementos de debug do Next.js */
+[data-n-css],
+[id*="__NEXT_"],
+[id*="__next_"],
+[class*="__next_"],
+[data-next-hide-fouc] {
+  display: none !important;
+}
+
+/* Esconder elementos específicos de debug que aparecem abaixo do footer */
+noscript[data-n-css],
+script[id*="__NEXT_"],
+script[id*="__next_"] {
+  display: none !important;
+}
